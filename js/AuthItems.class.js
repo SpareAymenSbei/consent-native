@@ -26,7 +26,7 @@ const authList = [
     new AuthItem({
         title: 'Your account details',
         description: 'This includes your account name, account details and balance',
-        imgUrl: '../assets/infoImages/account-details.svg'
+        imgUrl: 'assets/infoImages/account-details.svg'
     }),
     new AuthItem({
         title: 'Your transactions',
@@ -35,7 +35,7 @@ const authList = [
             transactions from the past 6 months (or more, if
             available) along with any regular payments
         `,
-        imgUrl: '../assets/infoImages/transfers.svg'
+        imgUrl: 'assets/infoImages/transfers.svg'
     }),
     new AuthItem({
         title: 'Your account features and benefits',
@@ -44,7 +44,7 @@ const authList = [
             fees charges and interst you pay, as well as any benifits,
             and interest your account offers
         `,
-        imgUrl: '../assets/infoImages/features.svg'
+        imgUrl: 'assets/infoImages/features.svg'
     }),
 
     new AuthItem({
@@ -57,7 +57,7 @@ const authList = [
             revoke or renew this consent at any time from the 
             Spare app, or direcly from your bank account
         `,
-        imgUrl: '../assets/infoImages/information.svg'
+        imgUrl: 'assets/infoImages/information.svg'
     }),
 ]
 

@@ -25,19 +25,19 @@ const bankProvidersDOM = document.querySelector('.bank-providers');
 
 const bankProvidersList = [
     new BankProvider({
-        imgUrl : '../assets/mock/BBK.png',
+        imgUrl : 'assets/mock/BBK.png',
         bankName : 'BBK'
     }),
     new BankProvider({
-        imgUrl : '../assets/mock/BisB.png',
+        imgUrl : 'assets/mock/BisB.png',
         bankName : 'BisB'
     }),
     new BankProvider({
-        imgUrl : '../assets/mock/ithmaar-logo.png',
+        imgUrl : 'assets/mock/ithmaar-logo.png',
         bankName : 'Ithmaar Bank'
     }),
     new BankProvider({
-        imgUrl : '../assets/mock/Al-Salam-Bank-Logo.jpg',
+        imgUrl : 'assets/mock/Al-Salam-Bank-Logo.jpg',
         bankName : 'Al Salam Bank'
     }),
 ]

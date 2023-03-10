@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/stepper.css">
+    <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/title-section.css">
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="img-holder">
+            <img src="assets/logo.png" alt="logo">
+        </div>
+    </header>
+
+    <section class="section-title">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        <div class="content">
+            <div class="title"></div>
+            <div class="desc"></div>
+        </div>
+    </section>
+
+    <!-- content -->
+    <div class="progress-wrapper">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active">
+                    <div class="step-inner">Consent</div>
+                </li>
+                <li class="step step02">
+                    <div class="step-inner">Athentification</div>
+                </li>
+                <li class="step step03">
+                    <div class="step-inner">Complete</div>
+                </li>
+            </ul>
+            <div id="line">
+                <div id="line-progress"></div>
+            </div>
+
+            <div id="progress-content-section">
+                <div class="section-content step1 consent-content active ">
+                    <div class="input-holder">
+                        <input class="card" type="text" placeholder="Enter the Bank name...">
+                        <ion-icon class="search-icon card" name="search"></ion-icon>
+                    </div>
+                    <div class="bank-providers "></div>
+                    <div class="tip">
+                        <div class="title">Don't see your bank?</div>
+                        <div class="desc">We are very quickly adding other banks
+                            and hope to have your bank soon.
+                            Send us a message on the live chat to let us know!
+                        </div>
+                    </div>
+                    <div class="info">
+                        We are committed to keep your data safe and your information will be fully encrypted
+                        using SSL 256-bit encryption, the security standard that banks use.
+                    </div>
+                </div>
+                
+                <div class="section-content step2 auth-content ">
+                    <div class="auth-details "></div>
+                    <div class="share-dates">
+                        <div class="start-date">You are sharing your data from</div>
+                        <div class="end-date">We will access your data until</div>
+                    </div>
+                    <div class="info">
+                        Continue to your Bahrain National Bank application to share your <br>
+                        account information under these terms.
+                    </div>
+
+                    <button class="btn-primary">Confirm</button>
+                </div>
+
+                <div class="section-content step3 account-connected ">
+                    <div class="content">
+                        <div class="title">Thank you</div>
+                        <div class="img-holder card">
+                            <img src="assets/checked.png" alt="check-mark">
+                        </div>
+                        <div class="desc">We have received the requested informations
+                            <br>
+                            from your selected accounts
+                        </div>
+                        <button class="btn-primary">Continue</button>
+                        <button class="btn-text">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/AuthItems.class.js"></script>
+    <script src="js/BankProvider.class.js"></script>
+    <script src="js/stepper.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.section-title {
+    padding: 4rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    width: 29rem;
+    margin: 0 auto;
+}
+
+.section-title ion-icon {
+    font-size: 1.5rem;
+    width: 5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.section-title .content {
+    text-align: center;
+}
+
+.section-title .content .title {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.section-title .content .desc {
+    padding-top: 1.5rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width:768px) {
+    .section-title {
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    .section-title .content {
+        text-align: start;
+        padding: .5rem 1rem;
+    }
+    .section-title .content .desc {
+        padding-top: .8rem;
+    }
+
+    .section-title .ion-icon,
+    .section-title
+    svg {
+        width: 55%;
+    }
+}

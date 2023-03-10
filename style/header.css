@@ -1,0 +1,31 @@
+header{
+    width: 100%;
+}
+header .img-holder{
+    margin: 0 auto;
+
+    background-color: var(--secondary);
+    width:4rem;
+    padding: 3rem 2rem 1.5rem 2rem;
+    border-radius: 0px 0px 150px 150px;
+}
+header .img-holder img{
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    header{
+        background-color: var(--secondary);
+    }
+    header .img-holder{
+        background-color: transparent;
+        padding: 1rem 0 0 0;
+    }
+    header .img-holder img{
+        width: 5rem;
+        border-radius: 100%;
+        transform: translateY(30px);
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+
+    }
+}

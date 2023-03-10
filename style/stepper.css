@@ -1,0 +1,122 @@
+#progress-bar-container #line {
+    width: 65%;
+    margin: auto;
+    background-color: var(--light_secondary);
+    height: 3px;
+    position: absolute;
+    left: 16%;
+    z-index: 1;
+    border-radius: 50px;
+    transition: all ease 0.75s;
+  }
+  
+  #progress-bar-container #line-progress {
+    content: " ";
+    width: 25%;
+    height: 100%;
+    background-color:var(--primary);
+    position: absolute;
+    z-index: 2;
+    border-radius: 50px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+  }
+
+  .section-content h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+  }
+  
+  .section-content p {
+    font-size: 16px;
+    line-height: 1.8rem;
+    color: #777;
+  }
+  
+  .section-content {
+    display: none;
+    animation: FadeinUp 0.7s ease 1 forwards;
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  
+  .section-content.active {
+    display: block;
+    opacity: 1;
+  }
+  .progress-wrapper {
+    margin: auto;
+    max-width: 1080px;
+  }
+  #progress-bar-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    margin-top: 65px;
+  }
+  #progress-bar-container ul {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    margin-top: -25px;
+  }
+  #progress-bar-container li::before {
+    content: '';
+    display: flex;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    transition: all ease 0.3s;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    background-color: var(--light_secondary);
+   
+  }
+
+  
+  #progress-bar-container li.step01::before {
+   content: '1';
+  }
+  #progress-bar-container li.step02::before {
+   content: '2';
+  }
+  #progress-bar-container li.step03::before {
+   content: '3';
+  }
+ 
+  
+  #progress-bar-container li.active::before{
+    background-color: var(--primary);
+    color: white;
+  }
+  #progress-bar-container li {
+    list-style: none;
+    float: left;
+    top: 10px;
+    width: 33%;
+    text-align: center;
+    color: black;
+    font-size: 11px;
+    font-weight: 700;
+    transition: all ease 0.2s;
+    vertical-align: bottom;
+    height: 60px;
+    position: relative;
+  }
+  @keyframes FadeInUp {
+    0% {
+      transform: translateY(15px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  

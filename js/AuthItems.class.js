@@ -41,7 +41,7 @@ const authList = [
         title: 'Your account features and benefits',
         description: `
             This includes the type of account you have, any
-            fees charges and interst you pay, as well as any benifits,
+            fees charges and interest you pay, as well as any benefits,
             and interest your account offers
         `,
         imgUrl: 'assets/infoImages/features.svg'
@@ -55,7 +55,7 @@ const authList = [
             your sensitive data, and that data is protected
             using the highest levels of encryption. You may
             revoke or renew this consent at any time from the 
-            Spare app, or direcly from your bank account
+            Spare app, or directly from your bank account
         `,
         imgUrl: 'assets/infoImages/information.svg'
     }),
